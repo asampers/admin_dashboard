@@ -42,7 +42,7 @@ ul {
   justify-content: space-around;
   background-color: aquamarine;
   border: 1px solid black;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .header-top, .header-bottom {
@@ -78,11 +78,15 @@ input[type='search'] {
   padding: 8px 16px;
 }
 
+#share-btn {
+  margin-right: 0;
+}
+
 .main {
   grid-column: 2;
 
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr max(300px);
   gap: 15px;
   margin: 15px;
   background-color: lightgray;
@@ -119,4 +123,33 @@ h3 {
 
 .main-right-side {
   grid-row: 2 / auto;
+  max-width: 350px;
+}
+
+.card.right-top, .card.right-bottom {
+  gap: 15px;
+  max-height: 300px;
+}
+
+.card.right-top>div {
+  max-height: 33%;
+  overflow: hidden;
+  border-bottom: 1px solid grey;
+  padding: 10px 0 ;
+}
+
+.card.right-top>p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.trenders {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 15px;
 }
