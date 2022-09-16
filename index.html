@@ -5,41 +5,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
   <title>Admin Dashboard</title>
 </head>
 <body>
   <div class="wrapper">
     <div class="sidebar">
       <div class="side-head">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M3,11H11V3H3M3,21H11V13H3M13,21H21V13H13M13,3V11H21V3" />
+        </svg>
         <h1>Dashboard</h1>
       </div>
       <ul class="list1">
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
-        <li>Communities</li>
+        <li class="home">Home</li>
+        <li class="profile">Profile</li>
+        <li class="messages">Messages</li>
+        <li class="history">History</li>
+        <li class="tasks">Tasks</li>
+        <li class="communities">Communities</li>
       </ul>
       <ul class="list2">
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy</li>
+        <li class="settings">Settings</li>
+        <li class="support">Support</li>
+        <li class="privacy">Privacy</li>
       </ul>  
     </div>
     <div class="header">
       <div class="header-top">
-        <input type="search">
+        <div class="header-top-left">
+          <span class="mdi mdi-magnify"></span>
+          <input type="search">
+        </div>
         <div class="header-top-right">
-          <span>bell</span>
-          <span>small cat</span>
-          <p>Morgan Oakley</p>
+          <span class="mdi mdi-bell-ring-outline"></span>
+          <img src="./avatars/cat.png" alt="" class="small-cat">
+          <h4>Morgan Oakley</h4>
         </div>  
       </div>
     
       <div class="header-bottom">
         <div class="header-bottom-left">
-          <span>large cat</span>
+          <img src="./avatars/cat.png" alt="" class="large-cat">
           <div>
             <p>Hi there,</p>
             <h2>Morgan Oakley (@morgan)</h2>
@@ -64,9 +72,9 @@
             </p>
           </div>
           <div class="icons">
-            <span>star</span>
-            <span>eye</span>
-            <span>curly v</span>
+            <span class="mdi mdi-star-plus-outline"></span>
+            <span class="mdi mdi-eye-plus-outline"></span>
+            <span class="mdi mdi-source-fork"></span>
           </div>
         </div>
         <div class="card">
@@ -78,9 +86,9 @@
             </p>
           </div>
           <div class="icons">
-            <span>star</span>
-            <span>eye</span>
-            <span>curly v</span>
+            <span class="mdi mdi-star-plus-outline"></span>
+            <span class="mdi mdi-eye-plus-outline"></span>
+            <span class="mdi mdi-source-fork"></span>
           </div>
         </div>
         <div class="card">
@@ -93,9 +101,9 @@
             </p>
           </div>
           <div class="icons">
-            <span>star</span>
-            <span>eye</span>
-            <span>curly v</span>
+            <span class="mdi mdi-star-plus-outline"></span>
+            <span class="mdi mdi-eye-plus-outline"></span>
+            <span class="mdi mdi-source-fork"></span>
           </div>
         </div>
         <div class="card">
@@ -108,9 +116,9 @@
             </p>
           </div>
           <div class="icons">
-            <span>star</span>
-            <span>eye</span>
-            <span>curly v</span>
+            <span class="mdi mdi-star-plus-outline"></span>
+            <span class="mdi mdi-eye-plus-outline"></span>
+            <span class="mdi mdi-source-fork"></span>
           </div>
         </div>
         <div class="card">
@@ -123,9 +131,9 @@
             </p>
           </div>
           <div class="icons">
-            <span>star</span>
-            <span>eye</span>
-            <span>curly v</span>
+            <span class="mdi mdi-star-plus-outline"></span>
+            <span class="mdi mdi-eye-plus-outline"></span>
+            <span class="mdi mdi-source-fork"></span>
           </div>
         </div>
         <div class="card">
@@ -138,9 +146,9 @@
             </p>
           </div>
           <div class="icons">
-            <span>star</span>
-            <span>eye</span>
-            <span>curly v</span>
+            <span class="mdi mdi-star-plus-outline"></span>
+            <span class="mdi mdi-eye-plus-outline"></span>
+            <span class="mdi mdi-source-fork"></span>
           </div>
         </div>
       </div>
@@ -174,28 +182,28 @@
         <h3>Trending</h3>
         <div class="card right-bottom">
           <div class="trenders">
-            <span>dog</span>
+            <img src="./avatars/racoon.png" alt="" class="side-avatars">
             <div>
               <p>@tegan</p>
               <p>Lorld Peace Builder</p>
             </div>
           </div>
           <div class="trenders">
-            <span>cat</span>
+            <img src="./avatars/cat.png" alt="" class="side-avatars">
             <div>
               <p>@morgan</p>
               <p>Super Cool Project</p>
             </div>
           </div>
           <div class="trenders">
-            <span>alien</span>
+            <img src="./avatars/leopard.png" alt="" class="side-avatars">
             <div>
               <p>@kendall</p>
               <p>Life Changing App</p>
             </div>
           </div>
           <div class="trenders">
-            <span>penguin</span>
+            <img src="./avatars/hippo.png" alt="" class="side-avatars">
             <div>
               <p>@alex</p>
               <p>No Traffic Maker</p>
