@@ -248,11 +248,10 @@ input:hover {
   gap: 15px;
   max-height: 300px;
 }
-
+ 
 .card.right-top>div {
-  max-height: 33%;
+  height: 33%;
   max-width: 80%;
-  overflow: hidden;
   border-bottom: 1px solid grey;
   padding: 10px 0 ;
 }
@@ -268,9 +267,12 @@ input:hover {
   margin-left: 10px; 
 }
 
-.card.right-top>p {
+.card.right-top>div>p {
+  font-size: .9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
